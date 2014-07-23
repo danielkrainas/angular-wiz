@@ -15,16 +15,16 @@ Otherwise, the files are also available through the following package managers:
 
 ## Getting Started
 
-Add either the minified or unminified script to your project. Don't forget to add `angular-wiz` module as a dependency: 
+Add either the minified or unminified script to your project. After that, you will need to add the `angular-wiz` module as a dependency in your Angular app. This can be done by simply doing: 
 
 ```js
-var app = angular.module('myApp', ['angular-wiz']);
+angular.module('your-app', ['angular-wiz']);
 ```
 
-Example usage:
+Here is an example of the directive structure and options available:
 
 ```html
-<wizard>
+<wizard finished="executeWizardComplete()">
 	<wizard-step title="first" active="true">
         <!-- content for the first step -->
     </wizard-step>
@@ -34,9 +34,15 @@ Example usage:
 </wizard>
 ```
 
-### Notes
+### Wizard Directive Options
 
-It supports any amount of steps.
+- **finished**: A function to be called when the wizard is finished. The syntax allowed is similiar to `ng-click`.
+
+### Step Directive Options
+
+- **title**: The title of the step. This will be displayed in the steps list of the wizard.
+
+- **active**: A boolean to set the active step in the wizard. *please note*: this option will likely be removed in the future.
 
 ## Supported Browsers
 
