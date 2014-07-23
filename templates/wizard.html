@@ -1,0 +1,11 @@
+<div>
+	<ul class="easyWizardSteps" ng-transclude></ul>
+	<div class="easyWizardWrapper">
+		<section class="step" ng-repeat="step in steps" ng-class="{active: step.active}" step-content-transclude="step"></section>
+	</div>
+	<div class="easyWizardButtons" style="clear: both;">
+		<button class="prev btn btn-default" ng-click="previous()" ng-show="canReturn">« Back</button>
+		<button class="next btn btn-default" ng-click="next()" ng-show="canContinue">Next »</button>
+		<button type="submit" class="submit btn btn-primary" ng-click="finish()" ng-show="isFinalStep">Submit</button>
+	</div>
+</div>

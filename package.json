@@ -1,0 +1,39 @@
+{
+  "name": "angular-wiz",
+  "version": "0.0.1",
+  "description": "A native angular wizard directive that is HTML/CSS-compatible with the easyWizard jQuery plugin.",
+  "license": "MIT",
+  "homepage": "https://github.com/danielkrainas/angular-wiz",
+  "private": true,
+  "author": {
+    "name": "Daniel Krainas",
+    "email": "me@danielkrainas.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:danielkrainas/angular-wiz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danielkrainas/angular-wiz/issues"
+  },
+  "scripts": {
+    "test": "node node_modules/grunt-cli/bin/grunt test",
+    "postinstall": "node node_modules/bower/bin/bower install"
+  },
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "~0.1.13",
+    "bower": "^1.3.3"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+    "matchdep": "~0.3.0",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-html2js": "~0.2.8",
+    "karma": "~0.12.17",
+    "grunt-karma": "~0.8.3",
+    "karma-phantomjs-launcher": "~0.1.4",
+    "karma-jasmine": "~0.1.5"
+  }
+}

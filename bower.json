@@ -1,0 +1,14 @@
+{
+    "name": "angular-wiz",
+	"main": "dist/angular-wiz.js",
+	"ignore": [
+		"test",
+		"src",
+		"node_modules",
+		"components"
+	],
+    "dependencies": {
+        "angular": "latest",
+        "angular-mocks": "latest"
+    }
+}
