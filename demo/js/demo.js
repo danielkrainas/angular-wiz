@@ -1,0 +1,1 @@
+angular.module('demo-app', ['angular-wiz']);
